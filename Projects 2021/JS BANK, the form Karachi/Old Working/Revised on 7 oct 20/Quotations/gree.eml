@@ -1,0 +1,722 @@
+Delivered-To: pioneer4us@gmail.com
+Received: by 2002:a5d:8b8a:0:0:0:0:0 with SMTP id p10csp4162016iol;
+        Tue, 29 Sep 2020 05:35:38 -0700 (PDT)
+X-Received: by 2002:a05:600c:21c4:: with SMTP id x4mr4440701wmj.107.1601382938354;
+        Tue, 29 Sep 2020 05:35:38 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601382938; cv=none;
+        d=google.com; s=arc-20160816;
+        b=HAJ+R+QYNltRfwfRYIMeokuwQkGKWCGpu9RexfEE+ZPp+aNJdKiyfIzPwXyBIXtIiT
+         2RMAoKtr+JpKVQebwCisIzckYwddPLD7n/3SzbGMpTDv+yGv7xkMurtBqGiFpS9ZNZFO
+         nhEJNUMAtQ5brXu++8xvl6qLT1A8YupxQMGDoo3aLqg60NlNy0eZF4TUtwaKlGa1qVVL
+         KkQy7a9WTiMFX949FrJ4T6PyOV16VjMOM30/lJ3K26JPokvrhV3OYBFGjRcSc1Y+963d
+         d8xflocNj5Lp17ZtYg1x5K5GZTGp58ULrNTDMdJ6d1VIeVgJsnaS5892qFy3TorSr4TL
+         X/uQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-language:thread-index:mime-version:message-id:date:subject
+         :in-reply-to:references:cc:to:from:dkim-signature;
+        bh=fyz1zWCTZxVp5HihcoC5IuRoytWI30TyEVf+NeDQYd0=;
+        b=AcrGClbeNR7HsAz1bCbB1ZQph3KSkicDdnSlfha9sL51BM8WxjS/O2Dgt0fR6RpZwn
+         9yN1ro1Hujs10GrJCCTFS6HBbW4ffJb2k91f5LwrrRM+qcyJx9qHe8BYeCFPRjWanh1P
+         nhg8OxKqIk0yGG/8jYtsDfbkr9bIQQULMr72T6FlWY20riLHOz22utXycXHLx3RlGgj7
+         Ch/FvsvcRdZi0KiyTsSWNS9Gufpi2gZA4XrroE7BIbQJ5265HlsyapkdkGSbwQD1T+TA
+         dGuR2TZHhEX2yuxLDpM691xg7a8WjQs6xEXN6IUmyOiK1UklmM8l3vlXaqCqz83pfegN
+         q0eg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@dwp.com.pk header.s=google header.b=RA4lcVbx;
+       spf=pass (google.com: domain of hamid.khan@dwp.com.pk designates 209.85.220.41 as permitted sender) smtp.mailfrom=hamid.khan@dwp.com.pk
+Return-Path: <hamid.khan@dwp.com.pk>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id r11sor2434550wro.62.2020.09.29.05.35.38
+        for <pioneer4us@gmail.com>
+        (Google Transport Security);
+        Tue, 29 Sep 2020 05:35:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of hamid.khan@dwp.com.pk designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@dwp.com.pk header.s=google header.b=RA4lcVbx;
+       spf=pass (google.com: domain of hamid.khan@dwp.com.pk designates 209.85.220.41 as permitted sender) smtp.mailfrom=hamid.khan@dwp.com.pk
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=dwp.com.pk; s=google;
+        h=from:to:cc:references:in-reply-to:subject:date:message-id
+         :mime-version:thread-index:content-language;
+        bh=fyz1zWCTZxVp5HihcoC5IuRoytWI30TyEVf+NeDQYd0=;
+        b=RA4lcVbxWC/626qSVT/BtXPI7KSl35SU8zoIos78MQO8aklDfHYoM89nKz/rHFvwQD
+         1Zl4fJ9a+kDfljJME5k3+5aMGWLXKJnOYMWiQjwOynYvHU5eqG5UquPEWcISscJavAHC
+         TqJh7DD50HzL0CAEr/t+jxxYHP7QkuWYAJ5r0=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:from:to:cc:references:in-reply-to:subject:date
+         :message-id:mime-version:thread-index:content-language;
+        bh=fyz1zWCTZxVp5HihcoC5IuRoytWI30TyEVf+NeDQYd0=;
+        b=uWjYX0j4aBMFkJqEu78yYOdArIcCrcmIH19s2zcCl+EW/Kc+DyD4xZHKzlljNpcRM9
+         wVzGS8tSe+eTZcTTtfjvxpyEkLUQH4zNJmcQwI+aEDY916FR2eHV/ZcqGlBRw3sudfE0
+         EbyhJjNDGmvOF2Qsf0aN6cj2wDMI+p+85fZGFKEhlahBdL6lkfSk/sQ79lzkXGNy0u+Z
+         G1fQ7M6MGmKL5mgPQYbJYfNY4yk+S3VMirsSqNpKkf3sa0NOSk68WV3QGS7hrT/AbZwk
+         rDib4vRnZ3M4SOfShqwcFumEXRnDVQxbxuCP9+aGKFQZwNeMq6hPxExL0/HwJlmYlP2V
+         YmJQ==
+X-Gm-Message-State: AOAM533NJmYfIDMY2GUZKcMwPn1/CjI5z7jhkzEGlI8ENqv/KoXCKJ2G
+	3nbCoAD6CEwj/sc0/Sl03UzwNgD0DZzSnJQO
+X-Google-Smtp-Source: ABdhPJxt+K4EbSXSR0bBxs/JujWry2xJ2Qbrn+rYVtuaEzb5j9m+4oR+UUUqqaywTFJSZHPgyU+peg==
+X-Received: by 2002:adf:f382:: with SMTP id m2mr3870186wro.327.1601382937867;
+        Tue, 29 Sep 2020 05:35:37 -0700 (PDT)
+Return-Path: <hamid.khan@dwp.com.pk>
+Received: from DESKTOP35TGL2S ([39.44.52.191])
+        by smtp.gmail.com with ESMTPSA id k15sm6188273wrv.90.2020.09.29.05.35.35
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 29 Sep 2020 05:35:37 -0700 (PDT)
+From: "Muhammad Hamid Khan" <hamid.khan@dwp.com.pk>
+To: "'Pioneer Engg Services'" <pioneer4us@gmail.com>
+Cc: <adnan.khan@dwp.com.pk>
+References: <CANVOa=8CL3x5sWC8S51m2gGkx9G2=czNafim_3Hn52m7ebugng@mail.gmail.com> <CANVOa=9GjgzKf+EwbqGsaPUOCKbANOKiJ3v-D3xYzawmUgR2Yg@mail.gmail.com> <CANVOa=-wLbned_C9QjRzT_wKhsk=vDUO9ZYRhUo8OkYxdDErjw@mail.gmail.com> <CANVOa=9KsjDug_7YD-hU=CkOimkwKWHz6orUXHs5+UQdVwumNA@mail.gmail.com>
+In-Reply-To: <CANVOa=9KsjDug_7YD-hU=CkOimkwKWHz6orUXHs5+UQdVwumNA@mail.gmail.com>
+Subject: RE: Quotation required (JS Bank The Forum Karachi)
+Date: Tue, 29 Sep 2020 17:35:33 +0500
+Message-ID: <01e701d6965d$081d6f40$18584dc0$@dwp.com.pk>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_01E8_01D69686.F0F68480"
+X-Mailer: Microsoft Outlook 16.0
+Thread-Index: AQHzXnKs4OA/qVPo62STgUAEiF3ZIgIMG1HVAZstm3ACKk0aIakXb5KQ
+Content-Language: en-us
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_01E8_01D69686.F0F68480
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Mr. Rehan Aslam,=20
+
+=20
+
+Reference to your email, please find herewith price as requested:
+
+=20
+
+GREE G10 Inverter Wall mount AC unit (Pullar/ Cozy:
+
+Model No. 1.0 ton Rs. 72,000/- (Including GST).
+
+Model No. 1.5 ton Rs. 89,900/- (Including GST).
+
+Model No. 2.0 ton Rs. 119,900/- (Including GST).=20
+
+=20
+
+Terms and Conditions: =20
+
+Price :                    The above quoted prices are subject to change =
+without prior notice, price prevailing at the time of delivery will be =
+charged accordingly.
+
+Validity :                Above prices are valid upto 07 Days only.
+
+Payment :              Advance via cheque/pay order favoring M/s. =
+Digital World Pakistan (Pvt) Ltd.
+
+Warranty:                  Standard Product Warranty subject to normal =
+use and as per the terms mentioned on warranty card.
+
+Installation:           Buyer's arrangement, on their own account.  =20
+
+Note:                      As per Standard practice, connecting kit of =
+10' available with GREE wall mounted split ac units only.
+
+Delivery:                             =20
+
+                -   Supply would be assured for all firm orders placed =
+08/10 week before. Please confirm the availability of stock before =
+issuance of Purchase  Order.=20
+
+                -   For confirmed delivery please share confirmed Order =
+details segment & region wise for assured supply at least 08 weeks =
+before.=20
+
+                -   Free of cost at Karachi, Lahore, Islamabad / =
+Rawalpindi, Hyderabad, Gujranwala, Multan, Faisalabad, Sargodha, Sukkur =
+& adjoining areas only=20
+
+                    subject to force majeure, For remote & far-flung =
+locations / branches, actual freight & cartridge will be charged with =
+prior approval.=20
+
+                -   Limited Stock available on first come first serve =
+basis.=20
+
+=20
+
+SRO related to Sales Tax Withheld Rules.
+
+Our products fall under Third Schedule to the Sales Tax Act, 1990, So =
+sales tax withheld (1/5th) does not applied, no customer is obliged to =
+deduct 1/5th of sales tax 17%.=20
+
+                               =20
+
+150ZZL. Exclusions.-The provisions of this Chapter shall not apply to =
+the supplies of the following goods and services if made by a registered =
+person, namely:-
+
+(i) electrical energy; (ii) natural gas; (iii) petroleum products as =
+supplied by petroleum production and exploration companies, oil =
+refineries, oil marketing companies and dealers of motor spirit and high =
+speed diesel; (iv) telecommunication services; (v) goods specified in =
+the Third Schedule to the Sales Tax Act, 1990 (VII of 1990), and the =
+goods on which federal excise duty is payable in sales tax mode on the =
+basis of retail price; (vii) Supplies made by an active taxpayer as =
+defined in the Sales Tax Act, 1990 to another registered UB
+
+                               =20
+
+Thanks & Regards
+
+=20
+
+Muhammad Hamid Khan
+
+Digital World Pakistan Pvt. Ltd.
+
+213, 214, Burhani Chamber,
+
+Abdullah Haroon Road, Saddar, Karachi
+
+Ph:  +92.21. 32734741, 32732987, 32752966
+
+Cell: +92.300-2824998
+
+Website: www.ecostar.com.pk <http://www.ecostar.com.pk>=20
+
+=20
+
+=20
+
+From: Pioneer Engg Services <pioneer4us@gmail.com>=20
+Sent: Tuesday, September 29, 2020 5:15 PM
+To: Ehsun Ali <ehsun.ali@dwp.com.pk>
+Cc: asif.rizwan@dwp.com.pk; Khalid Syed <khalid.iqbal@dwp.com.pk>; =
+Naushad Aleem <naushad.aleem@dwp.com.pk>; Muhammad Hamid Khan =
+<hamid.khan@dwp.com.pk>; Syed Mazhar Abbas <mazhar.abbas@dwp.com.pk>; =
+Salman Sattar <salman.sattar@dwp.com.pk>
+Subject: Quotation required (JS Bank The Forum Karachi)
+
+=20
+
+=20
+
+Please quote the rates for the following:=20
+
+=20
+
+
+Supply,installation and commissioning of Air-cooled electric operated, =
+condensing outdoor units, High efficiency, High C.O.P, Latest Series =
+inverter base compressors with ACRA-CLAD factory coated condenser  fins, =
+, vibration isolators, factory wired weather proof cabinet type control =
+center, Integrated Centralized Remote Controller, atmosphere friendly =
+refrigerant (CFC free refrigerants)etc. Complete with safety controls =
+and accessories as per specification and drawings.(Note: each unit shall =
+have minimum two separate refrigerant circuits with separate refrigerant =
+& separate isolation valve.) Outdoor ambient Temp. Up to 45 degree C.
+
+Nos.
+
+
+OUTDOOR UNIT-01  83.0 TR Capacity.(Connected Load)
+
+1
+
+
+OUTDOOR UNIT-02 57 TR Capacity.(Connected Load)
+
+1
+
+
+ INDOOR UNITS.
+
+=20
+
+
+Indoor units complete with automatic and safety controls and accessories =
+as per drawing and specification.
+
+Nos.
+
+
+Wall Mounted 2.0 TR
+
+2
+
+
+Wall Mounted 1.5 TR
+
+6
+
+
+Wall Mounted 1.0 TR
+
+9
+
+
+Cassettes Unit  4.0 TR
+
+11
+
+
+Cassettes Unit  3.0 TR
+
+6
+
+
+Cassettes Unit  2.0 TR
+
+1
+
+
+Cassettes Unit  1.5 TR
+
+25
+
+
+Cassettes Unit  1.0 TR
+
+2
+
+
+Ducted Unit 4.0TR
+
+3
+
+
+Supply,installation Imported fitting and components (Y-Branches & =
+control wiring) complete with all respects.
+
+1 Lot.
+
+=20
+
+
+  =
+<https://docs.google.com/uc?export=3Ddownload&id=3D14t27TmRmNs-gQetk89MoT=
+3ZZ-T-0OuZf&revid=3D0B70qWfzTpYmWRmNJRzVINFlXTU1vUk9FT2c4MUZud2MvWWpBPQ> =
+
+
+
+------=_NextPart_000_01E8_01D69686.F0F68480
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" =
+xmlns:o=3D"urn:schemas-microsoft-com:office:office" =
+xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" =
+xmlns=3D"http://www.w3.org/TR/REC-html40"><head><meta =
+http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8"><meta =
+name=3DGenerator content=3D"Microsoft Word 15 (filtered medium)"><!--[if =
+!mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-priority:99;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle18
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-priority:99;
+	mso-style-link:"Plain Text";
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]--></head><body lang=3DEN-US =
+link=3D"#0563C1" vlink=3D"#954F72"><div class=3DWordSection1><p =
+class=3DMsoPlainText>Dear Mr. Rehan Aslam, <o:p></o:p></p><p =
+class=3DMsoPlainText><o:p>&nbsp;</o:p></p><p =
+class=3DMsoPlainText>Reference to your email, please find herewith price =
+as requested:<o:p></o:p></p><p =
+class=3DMsoPlainText><o:p>&nbsp;</o:p></p><p =
+class=3DMsoPlainText><b><u>GREE G10 Inverter Wall mount AC unit (Pullar/ =
+Cozy:<o:p></o:p></u></b></p><p class=3DMsoPlainText>Model No. 1.0 ton =
+Rs. 72,000/- (Including GST).<o:p></o:p></p><p =
+class=3DMsoPlainText>Model No. 1.5 ton Rs. 89,900/- (Including =
+GST).<o:p></o:p></p><p class=3DMsoPlainText>Model No. 2.0 ton Rs. =
+119,900/- (Including GST). <o:p></o:p></p><p =
+class=3DMsoPlainText><o:p>&nbsp;</o:p></p><p =
+class=3DMsoPlainText><b><u>Terms and Conditions:&nbsp; =
+<o:p></o:p></u></b></p><p class=3DMsoPlainText>Price =
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The above quoted prices are =
+subject to change without prior notice, price prevailing at the time of =
+delivery will be charged accordingly.<o:p></o:p></p><p =
+class=3DMsoPlainText>Validity =
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp; Above prices are valid upto 07 Days =
+only.<o:p></o:p></p><p class=3DMsoPlainText>Payment =
+:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; Advance via cheque/pay order favoring M/s. Digital World Pakistan =
+(Pvt) Ltd.<o:p></o:p></p><p class=3DMsoPlainText><span =
+style=3D'font-size:10.0pt'>Warranty:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; =
+</span>Standard Product Warranty subject to normal use and as per the =
+terms mentioned on warranty card.<o:p></o:p></p><p =
+class=3DMsoPlainText>Installation:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; Buyer's arrangement, on their own =
+account.&nbsp;&nbsp; <o:p></o:p></p><p =
+class=3DMsoPlainText>Note:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp; As per Standard practice, connecting kit of 10' available with =
+GREE wall mounted split ac units only.<o:p></o:p></p><p =
+class=3DMsoPlainText>Delivery:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<o:p></o:p></p><p =
+class=3DMsoPlainText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Supply would =
+be assured for all firm orders placed 08/10 week before. <span =
+style=3D'background:yellow;mso-highlight:yellow'>Please confirm the =
+availability of stock before issuance of Purchase&nbsp; Order</span>. =
+<o:p></o:p></p><p =
+class=3DMsoPlainText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; For confirmed =
+delivery please share confirmed Order details segment &amp; region wise =
+for assured supply at least 08 weeks before. <o:p></o:p></p><p =
+class=3DMsoPlainText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Free of cost =
+at Karachi, Lahore, Islamabad / Rawalpindi, Hyderabad, Gujranwala, =
+Multan, Faisalabad, Sargodha, Sukkur &amp; adjoining areas only =
+<o:p></o:p></p><p =
+class=3DMsoPlainText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subje=
+ct to force majeure, For remote &amp; far-flung locations / branches, =
+actual freight &amp; cartridge will be charged with prior approval. =
+<o:p></o:p></p><p =
+class=3DMsoPlainText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp; Limited Stock =
+available on first come first serve basis. <o:p></o:p></p><p =
+class=3DMsoPlainText>&nbsp;<o:p></o:p></p><p class=3DMsoPlainText>SRO =
+related to Sales Tax Withheld Rules.<o:p></o:p></p><p =
+class=3DMsoPlainText>Our products fall under Third Schedule to the Sales =
+Tax Act, 1990, So sales tax withheld (1/5th) does not applied, no =
+customer is obliged to deduct 1/5th of sales tax 17%. <o:p></o:p></p><p =
+class=3DMsoPlainText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<o:p><=
+/o:p></p><p class=3DMsoPlainText>150ZZL. Exclusions.-The provisions of =
+this Chapter shall not apply to the supplies of the following goods and =
+services if made by a registered person, namely:-<o:p></o:p></p><p =
+class=3DMsoPlainText>(i) electrical energy; (ii) natural gas; (iii) =
+petroleum products as supplied by petroleum production and exploration =
+companies, oil refineries, oil marketing companies and dealers of motor =
+spirit and high speed diesel; (iv) telecommunication services; (v) goods =
+specified in the Third Schedule to the Sales Tax Act, 1990 (VII of =
+1990), and the goods on which federal excise duty is payable in sales =
+tax mode on the basis of retail price; (vii) Supplies made by an active =
+taxpayer as defined in the Sales Tax Act, 1990 to another registered =
+UB<o:p></o:p></p><p =
+class=3DMsoPlainText>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+<o:p></o:p></p><p class=3DMsoPlainText>Thanks &amp; =
+Regards<o:p></o:p></p><p class=3DMsoPlainText><o:p>&nbsp;</o:p></p><p =
+class=3DMsoPlainText>Muhammad Hamid Khan<o:p></o:p></p><p =
+class=3DMsoPlainText>Digital World Pakistan Pvt. Ltd.<o:p></o:p></p><p =
+class=3DMsoPlainText>213, 214, Burhani Chamber,<o:p></o:p></p><p =
+class=3DMsoPlainText>Abdullah Haroon Road, Saddar, =
+Karachi<o:p></o:p></p><p class=3DMsoPlainText>Ph:&nbsp; +92.21. =
+32734741, 32732987, 32752966<o:p></o:p></p><p class=3DMsoPlainText>Cell: =
++92.300-2824998<o:p></o:p></p><p class=3DMsoNormal>Website: <a =
+href=3D"http://www.ecostar.com.pk">www.ecostar.com.pk</a><o:p></o:p></p><=
+p class=3DMsoNormal><o:p>&nbsp;</o:p></p><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div =
+style=3D'border:none;border-top:solid #E1E1E1 1.0pt;padding:3.0pt 0in =
+0in 0in'><p class=3DMsoNormal><b>From:</b> Pioneer Engg Services =
+&lt;pioneer4us@gmail.com&gt; <br><b>Sent:</b> Tuesday, September 29, =
+2020 5:15 PM<br><b>To:</b> Ehsun Ali =
+&lt;ehsun.ali@dwp.com.pk&gt;<br><b>Cc:</b> asif.rizwan@dwp.com.pk; =
+Khalid Syed &lt;khalid.iqbal@dwp.com.pk&gt;; Naushad Aleem =
+&lt;naushad.aleem@dwp.com.pk&gt;; Muhammad Hamid Khan =
+&lt;hamid.khan@dwp.com.pk&gt;; Syed Mazhar Abbas =
+&lt;mazhar.abbas@dwp.com.pk&gt;; Salman Sattar =
+&lt;salman.sattar@dwp.com.pk&gt;<br><b>Subject:</b> Quotation required =
+(JS Bank The Forum Karachi)<o:p></o:p></p></div><p =
+class=3DMsoNormal><o:p>&nbsp;</o:p></p><div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'><=
+o:p>&nbsp;</o:p></span></p></div><div><div><div><div><div><div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>P=
+lease quote the rates for the =
+following:&nbsp;<o:p></o:p></span></p></div><div><p =
+class=3DMsoNormal><span =
+style=3D'font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'><=
+o:p>&nbsp;</o:p></span></p></div><table class=3DMsoNormalTable =
+border=3D0 cellspacing=3D0 cellpadding=3D0 width=3D424 =
+style=3D'width:318.0pt;border-collapse:collapse'><tr =
+style=3D'height:2.5in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext 1.0pt;padding:.75pt .75pt =
+0in =
+.75pt;height:2.5in;background-image:initial;background-position:initial;b=
+ackground-size:initial;background-repeat:initial;background-origin:initia=
+l;background-clip:initial'><p class=3DMsoNormal>Supply,installation and =
+commissioning of Air-cooled electric operated, condensing outdoor units, =
+High efficiency, High C.O.P, Latest Series inverter base compressors =
+with ACRA-CLAD factory coated condenser&nbsp; fins, , vibration =
+isolators, factory wired weather proof cabinet type control center, =
+Integrated Centralized Remote Controller, atmosphere friendly =
+refrigerant (CFC free refrigerants)etc. Complete with safety controls =
+and accessories as per specification and drawings.(Note: each unit shall =
+have minimum two separate refrigerant circuits with separate refrigerant =
+&amp; separate isolation valve.) <b>Outdoor ambient Temp. Up to 45 =
+degree C.</b><o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border:solid windowtext =
+1.0pt;border-left:none;padding:.75pt .75pt 0in =
+.75pt;height:2.5in;background-image:initial;background-position:initial;b=
+ackground-size:initial;background-repeat:initial;background-origin:initia=
+l;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>Nos.<o:p></o:p></p></td></tr><tr =
+style=3D'height:.4in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.4in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>OUTDOOR UNIT-01&nbsp; =
+83.0 TR Capacity.(Connected Load)<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.4in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>1<o:p></o:p></p></td></tr><tr =
+style=3D'height:.4in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.4in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>OUTDOOR UNIT-02 57 TR =
+Capacity.(Connected Load)<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.4in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>1<o:p></o:p></p></td></tr><tr =
+style=3D'height:17.25pt'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:17.25pt;background-image:initial;background-position:initial=
+;background-size:initial;background-repeat:initial;background-origin:init=
+ial;background-clip:initial'><p class=3DMsoNormal><b>&nbsp;INDOOR =
+UNITS.<o:p></o:p></b></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:17.25pt;background-image:initial;background-position:initial=
+;background-size:initial;background-repeat:initial;background-origin:init=
+ial;background-clip:initial'><p =
+class=3DMsoNormal><b>&nbsp;<o:p></o:p></b></p></td></tr><tr =
+style=3D'height:.4in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.4in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Indoor units complete =
+with automatic and safety controls and accessories as per drawing and =
+specification.<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.4in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>Nos.<o:p></o:p></p></td></tr><tr =
+style=3D'height:.2in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Wall Mounted 2.0 =
+TR<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>2<o:p></o:p></p></td></tr><tr =
+style=3D'height:.2in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Wall Mounted 1.5 =
+TR<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>6<o:p></o:p></p></td></tr><tr =
+style=3D'height:.2in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Wall Mounted 1.0 =
+TR<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>9<o:p></o:p></p></td></tr><tr =
+style=3D'height:.2in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Cassettes Unit&nbsp; 4.0 =
+TR<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>11<o:p></o:p></p></td></tr><tr =
+style=3D'height:.2in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Cassettes Unit&nbsp; 3.0 =
+TR<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>6<o:p></o:p></p></td></tr><tr =
+style=3D'height:.2in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Cassettes Unit&nbsp; 2.0 =
+TR<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>1<o:p></o:p></p></td></tr><tr =
+style=3D'height:.2in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Cassettes Unit&nbsp; 1.5 =
+TR<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>25<o:p></o:p></p></td></tr><tr =
+style=3D'height:.2in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Cassettes Unit&nbsp; 1.0 =
+TR<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>2<o:p></o:p></p></td></tr><tr =
+style=3D'height:.2in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Ducted Unit =
+4.0TR<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.2in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>3<o:p></o:p></p></td></tr><tr =
+style=3D'height:.4in'><td width=3D361 valign=3Dtop =
+style=3D'width:271.0pt;border:solid windowtext =
+1.0pt;border-top:none;padding:.75pt .75pt 0in =
+.75pt;height:.4in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal>Supply,installation =
+Imported fitting and components (Y-Branches &amp; control wiring) =
+complete with all respects.<o:p></o:p></p></td><td width=3D63 =
+style=3D'width:47.0pt;border-top:none;border-left:none;border-bottom:soli=
+d windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:.75pt =
+.75pt 0in =
+.75pt;height:.4in;background-image:initial;background-position:initial;ba=
+ckground-size:initial;background-repeat:initial;background-origin:initial=
+;background-clip:initial'><p class=3DMsoNormal align=3Dcenter =
+style=3D'text-align:center'>1 =
+Lot.<o:p></o:p></p></td></tr></table><div><p class=3DMsoNormal><span =
+style=3D'font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>&=
+nbsp;<br clear=3Dall><o:p></o:p></span></p></div><div><div><div><p =
+class=3DMsoNormal><img border=3D0 width=3D240 height=3D313 =
+style=3D'width:2.5in;height:3.2604in' id=3D"_x0000_i1025" =
+src=3D"https://docs.google.com/uc?export=3Ddownload&amp;id=3D14t27TmRmNs-=
+gQetk89MoT3ZZ-T-0OuZf&amp;revid=3D0B70qWfzTpYmWRmNJRzVINFlXTU1vUk9FT2c4MU=
+Zud2MvWWpBPQ"><o:p></o:p></p></div></div></div></div></div></div></div></=
+div></div></div></div></body></html>
+------=_NextPart_000_01E8_01D69686.F0F68480--
+

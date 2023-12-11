@@ -1,0 +1,752 @@
+Delivered-To: pioneer4us@gmail.com
+Received: by 2002:a5d:8b8a:0:0:0:0:0 with SMTP id p10csp3115506iol;
+        Sun, 27 Sep 2020 23:58:49 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJzNRvVwKlMJ5BxpEago4LVyuwkKdDhqZjTqRvKtXpGHwLwFvTeliW293sKipnb4KsiS4AGk
+X-Received: by 2002:a05:6e02:1411:: with SMTP id n17mr9072ilo.211.1601276328919;
+        Sun, 27 Sep 2020 23:58:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1601276328; cv=none;
+        d=google.com; s=arc-20160816;
+        b=r+shNA9JsgUNX4CXFd1iobq6IxwpU2Ls+LGq8H8MRNNffNUMzelOtdaVjhVfRSjw7+
+         SiporKev3+6A12X3a6ScRchF+84c+aAm+GnyY/mbDILr5UOElJKjS6DulED0KwMqUpTG
+         aXDO+Q2dDbfVD9PuIr0bfL1YZ8gVsx9XeSMIosaNW2ZwzsNhEuS4t0FCj0NRrYVr/ajq
+         C5DxiCF7pMJTy71u5mUcN/r4m3h1meWdeaxbryXjcIc2XWnGNeAez3cjAkyyomyCAL/a
+         Ry/eGFaGnmgnAHXlM1VLJFx9QBk7458S+6izjAvcjv/llpdJxdr+hEm5P/FabOm7uJBj
+         fSSQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:in-reply-to:to:references:date:subject:mime-version:from;
+        bh=NgFJ9u/MNSjg0o3gyFTpHkNoJE4gMtbkXVG1Na8kG2U=;
+        b=RFq/rtKPW5xhyk+Ss/grBGitDQt5xTW5oGIALMwy9C1LWBG+skfhDE05fEqUIZuGw0
+         6vFj0fuKMgEDn9PgxiLzTgZLyycsYYQcoiBpfhI/rMT5XjRXRxDbkXvPGB47l69/OWxt
+         mQdSi97CPtptYkCQV1nT3xeaddWLEUwtTlP7Zu79pH74qibAo+N2OzpVm2vpL82+On3I
+         4rSyhci1hnw/MG/zVp1RqXlalhR5NayjUn/td8nwr0xM0h2mFelN0xU9zT4Lzdd23g4d
+         /likvarYEHaF3Lw/BAdyB474D7/T43EhFmrCDqPK9jaH8s3uywFbkDO1nPWlEtloqJbF
+         OOkw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=neutral (google.com: 205.251.189.10 is neither permitted nor denied by best guess record for domain of akbar.zaheer@engatechinternational.com) smtp.mailfrom=akbar.zaheer@engatechinternational.com
+Return-Path: <akbar.zaheer@engatechinternational.com>
+Received: from smarthost1f.sectormail.net (smarthost1f.sectormail.net. [205.251.189.10])
+        by mx.google.com with ESMTPS id q9si127442ioj.44.2020.09.27.23.58.48
+        for <pioneer4us@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 27 Sep 2020 23:58:48 -0700 (PDT)
+Received-SPF: neutral (google.com: 205.251.189.10 is neither permitted nor denied by best guess record for domain of akbar.zaheer@engatechinternational.com) client-ip=205.251.189.10;
+Authentication-Results: mx.google.com;
+       spf=neutral (google.com: 205.251.189.10 is neither permitted nor denied by best guess record for domain of akbar.zaheer@engatechinternational.com) smtp.mailfrom=akbar.zaheer@engatechinternational.com
+Received: from plk120w.sectorshared.net (plk120w.sectorshared.net [192.96.211.48])
+	by smarthost1.sectormail.net (Postfix) with ESMTP id 8569A12FCBB
+	for <pioneer4us@gmail.com>; Mon, 28 Sep 2020 02:58:48 -0400 (EDT)
+Received: from akbars-mbp.home ([39.57.238.255]) by plk120w.sectorshared.net with
+ MailEnable ESMTPSA (version=TLS1_2 cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521); Mon, 28 Sep 2020 02:58:51 -0400
+From: Akbar Zaheer <akbar.zaheer@engatechinternational.com>
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_7A37E46A-7F70-49A4-9483-1E5C517823BE"
+Mime-Version: 1.0 (Mac OS X Mail 13.4 \(3608.120.23.2.4\))
+Subject: Re: Quotation required (JS Bank The Forum Karachi)
+Date: Mon, 28 Sep 2020 11:58:38 +0500
+References: <CANVOa=_FQe7M0rEAFcvf31xA40zENgH9qhFarLNMXSKWN_gpmA@mail.gmail.com>
+To: Pioneer Engg Services <pioneer4us@gmail.com>
+In-Reply-To: <CANVOa=_FQe7M0rEAFcvf31xA40zENgH9qhFarLNMXSKWN_gpmA@mail.gmail.com>
+Message-Id: <8C6684CA-A72E-4C68-827F-766C3D3ABB53@engatechinternational.com>
+X-Mailer: Apple Mail (2.3608.120.23.2.4)
+
+
+--Apple-Mail=_7A37E46A-7F70-49A4-9483-1E5C517823BE
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+Air Device
+Quantity
+Price
+Comments
+9" dia E.A.R
+15
+
+Don=E2=80=99t understand. Exhaust Air Register is square, not round
+9" dia F.A.D
+38
+76000
+
+12" X  12" S.A.D
+17
+44200
+
+E.A.L 14" X 8"
+2
+3400
+
+E.A.L 18" X 10"
+1
+2700
+
+E.A.L 16" X 8"
+1
+2000
+
+F.I.L  16" X 10" (WITH VCD AND FLITER
+1
+4800
+These are 2 devices. Damper with Louver
+F.I.L  16" X 8" (WITH VCD AND FLITER
+1
+3000
+These are 2 devices. Damper with Louver
+F.I.L  18" X 10" (WITH VCD AND FLITER
+1
+5400
+These are 2 devices. Damper with Louver
+
+---------------------
+Akbar Zaheer
+Engatech International
++923008243137
+
+> On Sep 26, 2020, at 4:45 PM, Pioneer Engg Services =
+<pioneer4us@gmail.com> wrote:
+>=20
+> Please quote the rates for the following:
+>=20
+>=20
+>=20
+> Supply & Installation of Air Devices with damper (Tuttle & Bailey =
+standards) Complete with all respect as per specification and drawings.	=
+Nos
+> 9" dia E.A.R	15
+> 9" dia F.A.D	38
+> 12" X  12" S.A.D	17
+> E.A.L 14" X 8"	2
+> E.A.L 18" X 10"	1
+> E.A.L 16" X 8"	1
+> F.I.L  16" X 10" (WITH VCD AND FLITER	1
+> F.I.L  16" X 8" (WITH VCD AND FLITER	1
+> F.I.L  18" X 10" (WITH VCD AND FLITER	1
+>=20
+>=20
+>=20
+>=20
+>=20
+
+
+--Apple-Mail=_7A37E46A-7F70-49A4-9483-1E5C517823BE
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; =
+charset=3Dutf-8"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; line-break: after-white-space;" =
+class=3D""><table cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse: collapse" class=3D"">
+<tbody class=3D"">
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 251.0px; height: 11.0px; =
+background-color: #b0b3b2; border-style: solid; border-width: 1.0px =
+1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; =
+padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div style=3D"margin: 0px;" =
+class=3D""><font face=3D"Helvetica Neue" color=3D"#000000" =
+style=3D"font-stretch: normal; font-size: 10px; line-height: normal; =
+font-family: &quot;Helvetica Neue&quot;; font-variant-ligatures: =
+common-ligatures;" class=3D""><b class=3D"">Air Device</b></font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 11.0px; =
+background-color: #b0b3b2; border-style: solid; border-width: 1.0px =
+1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; =
+padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div style=3D"margin: 0px; =
+text-align: center;" class=3D""><font face=3D"Helvetica Neue" =
+color=3D"#000000" style=3D"font-stretch: normal; font-size: 10px; =
+line-height: normal; font-family: &quot;Helvetica Neue&quot;; =
+font-variant-ligatures: common-ligatures;" class=3D""><b =
+class=3D"">Quantity</b></font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 11.0px; =
+background-color: #b0b3b2; border-style: solid; border-width: 1.0px =
+1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; =
+padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div style=3D"margin: 0px; =
+text-align: right;" class=3D""><font face=3D"Helvetica Neue" =
+color=3D"#000000" style=3D"font-stretch: normal; font-size: 10px; =
+line-height: normal; font-family: &quot;Helvetica Neue&quot;; =
+font-variant-ligatures: common-ligatures;" class=3D""><b =
+class=3D"">Price</b></font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 11.0px; =
+background-color: #b0b3b2; border-style: solid; border-width: 1.0px =
+1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; =
+padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div style=3D"margin: 0px;" =
+class=3D""><font face=3D"Helvetica Neue" color=3D"#000000" =
+style=3D"font-stretch: normal; font-size: 10px; line-height: normal; =
+font-family: &quot;Helvetica Neue&quot;; font-variant-ligatures: =
+common-ligatures;" class=3D""><b class=3D"">Comments</b></font></div>
+</td>
+</tr>
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 257.0px; height: 55.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Times" style=3D"font-stretch: normal; font-size: 14.7px; =
+line-height: normal; font-family: Times; font-variant-ligatures: =
+common-ligatures; color: rgba(0, 0, 0, 0.85);" class=3D"">9" dia =
+E.A.R</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 55.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: center;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">15</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 55.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; font-stretch: normal; =
+font-size: 12px; line-height: normal; min-height: 14px;" class=3D""><br =
+class=3D""></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 48.0px; border-style: =
+solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 =
+#000000 #000000 #000000; padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div=
+ style=3D"margin: 0px;" class=3D""><font face=3D"Helvetica Neue" =
+color=3D"#000000" style=3D"font-stretch: normal; font-size: 10px; =
+line-height: normal; font-family: &quot;Helvetica Neue&quot;; =
+font-variant-ligatures: common-ligatures;" class=3D"">Don=E2=80=99t =
+understand. Exhaust Air Register is square, not round</font></div>
+</td>
+</tr>
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 257.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Times" style=3D"font-stretch: normal; font-size: 14.7px; =
+line-height: normal; font-family: Times; font-variant-ligatures: =
+common-ligatures; color: rgba(0, 0, 0, 0.85);" class=3D"">9" dia =
+F.A.D</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: center;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">38</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: right;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">76000</font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 11.0px; border-style: =
+solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 =
+#000000 #000000 #000000; padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div=
+ style=3D"margin: 0px; font-stretch: normal; font-size: 12px; =
+line-height: normal; min-height: 14px;" class=3D""><br class=3D""></div>
+</td>
+</tr>
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 257.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Times" style=3D"font-stretch: normal; font-size: 14.7px; =
+line-height: normal; font-family: Times; font-variant-ligatures: =
+common-ligatures; color: rgba(0, 0, 0, 0.85);" class=3D"">12" X&nbsp; =
+12" S.A.D</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: center;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">17</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: right;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">44200</font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 11.0px; border-style: =
+solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 =
+#000000 #000000 #000000; padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div=
+ style=3D"margin: 0px; font-stretch: normal; font-size: 12px; =
+line-height: normal; min-height: 14px;" class=3D""><br class=3D""></div>
+</td>
+</tr>
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 257.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Times" style=3D"font-stretch: normal; font-size: 14.7px; =
+line-height: normal; font-family: Times; font-variant-ligatures: =
+common-ligatures; color: rgba(0, 0, 0, 0.85);" class=3D"">E.A.L 14" X =
+8"</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: center;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">2</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: right;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">3400</font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 11.0px; border-style: =
+solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 =
+#000000 #000000 #000000; padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div=
+ style=3D"margin: 0px; font-stretch: normal; font-size: 12px; =
+line-height: normal; min-height: 14px;" class=3D""><br class=3D""></div>
+</td>
+</tr>
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 257.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Times" style=3D"font-stretch: normal; font-size: 14.7px; =
+line-height: normal; font-family: Times; font-variant-ligatures: =
+common-ligatures; color: rgba(0, 0, 0, 0.85);" class=3D"">E.A.L 18" X =
+10"</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: center;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">1</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: right;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">2700</font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 11.0px; border-style: =
+solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 =
+#000000 #000000 #000000; padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div=
+ style=3D"margin: 0px; font-stretch: normal; font-size: 12px; =
+line-height: normal; min-height: 14px;" class=3D""><br class=3D""></div>
+</td>
+</tr>
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 257.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Times" style=3D"font-stretch: normal; font-size: 14.7px; =
+line-height: normal; font-family: Times; font-variant-ligatures: =
+common-ligatures; color: rgba(0, 0, 0, 0.85);" class=3D"">E.A.L 16" X =
+8"</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: center;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">1</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 18.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: right;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">2000</font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 11.0px; border-style: =
+solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 =
+#000000 #000000 #000000; padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div=
+ style=3D"margin: 0px; font-stretch: normal; font-size: 12px; =
+line-height: normal; min-height: 14px;" class=3D""><br class=3D""></div>
+</td>
+</tr>
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 257.0px; height: 42.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Times" style=3D"font-stretch: normal; font-size: 14.7px; =
+line-height: normal; font-family: Times; font-variant-ligatures: =
+common-ligatures; color: rgba(0, 0, 0, 0.85);" class=3D"">F.I.L&nbsp; =
+16" X 10" (WITH VCD AND FLITER</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 42.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: center;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">1</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 42.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: right;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">4800</font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 35.0px; border-style: =
+solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 =
+#000000 #000000 #000000; padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div=
+ style=3D"margin: 0px;" class=3D""><font face=3D"Helvetica Neue" =
+color=3D"#000000" style=3D"font-stretch: normal; font-size: 10px; =
+line-height: normal; font-family: &quot;Helvetica Neue&quot;; =
+font-variant-ligatures: common-ligatures;" class=3D"">These are 2 =
+devices. Damper with Louver</font></div>
+</td>
+</tr>
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 257.0px; height: 42.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Times" style=3D"font-stretch: normal; font-size: 14.7px; =
+line-height: normal; font-family: Times; font-variant-ligatures: =
+common-ligatures; color: rgba(0, 0, 0, 0.85);" class=3D"">F.I.L&nbsp; =
+16" X 8" (WITH VCD AND FLITER</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 42.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: center;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">1</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 42.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: right;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">3000</font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 35.0px; border-style: =
+solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 =
+#000000 #000000 #000000; padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div=
+ style=3D"margin: 0px;" class=3D""><font face=3D"Helvetica Neue" =
+color=3D"#000000" style=3D"font-stretch: normal; font-size: 10px; =
+line-height: normal; font-family: &quot;Helvetica Neue&quot;; =
+font-variant-ligatures: common-ligatures;" class=3D"">These are 2 =
+devices. Damper with Louver</font></div>
+</td>
+</tr>
+<tr class=3D"">
+<td valign=3D"top" style=3D"width: 257.0px; height: 42.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px;" class=3D""><font =
+face=3D"Times" style=3D"font-stretch: normal; font-size: 14.7px; =
+line-height: normal; font-family: Times; font-variant-ligatures: =
+common-ligatures; color: rgba(0, 0, 0, 0.85);" class=3D"">F.I.L&nbsp; =
+18" X 10" (WITH VCD AND FLITER</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 42.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: center;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">1</font></div>
+</td>
+<td valign=3D"middle" style=3D"width: 95.0px; height: 42.0px; =
+border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; =
+border-color: #000000 #000000 #000000 #000000; padding: 1.0px 1.0px =
+0.0px 1.0px" class=3D""><div style=3D"margin: 0px; text-align: right;" =
+class=3D""><font face=3D"Times" style=3D"font-stretch: normal; =
+font-size: 14.7px; line-height: normal; font-family: Times; =
+font-variant-ligatures: common-ligatures; color: rgba(0, 0, 0, 0.85);" =
+class=3D"">5400</font></div>
+</td>
+<td valign=3D"top" style=3D"width: 89.0px; height: 35.0px; border-style: =
+solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 =
+#000000 #000000 #000000; padding: 4.0px 4.0px 4.0px 4.0px" class=3D""><div=
+ style=3D"margin: 0px;" class=3D""><font face=3D"Helvetica Neue" =
+color=3D"#000000" style=3D"font-stretch: normal; font-size: 10px; =
+line-height: normal; font-family: &quot;Helvetica Neue&quot;; =
+font-variant-ligatures: common-ligatures;" class=3D"">These are 2 =
+devices. Damper with Louver</font></div>
+</td>
+</tr>
+</tbody>
+</table><div class=3D""><br class=3D"webkit-block-placeholder"></div><div =
+class=3D"">
+<div dir=3D"auto" style=3D"caret-color: rgb(0, 0, 0); letter-spacing: =
+normal; text-align: start; text-indent: 0px; text-transform: none; =
+white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; =
+text-decoration: none; word-wrap: break-word; -webkit-nbsp-mode: space; =
+line-break: after-white-space;" class=3D""><div style=3D"color: rgb(0, =
+0, 0);">---------------------</div><div><font color=3D"#011893" =
+face=3D"Lucida Grande" size=3D"2" style=3D"font-style: normal;" =
+class=3D"">Akbar Zaheer</font></div><div><font face=3D"Lucida Grande" =
+color=3D"#011893" class=3D""><span style=3D"font-style: normal;" =
+class=3D"">Engatech International</span></font></div><div><font =
+face=3D"Lucida Grande" color=3D"#011893" class=3D""><span =
+style=3D"font-style: normal;" =
+class=3D"">+923008243137</span></font></div></div>
+</div>
+<div style=3D""><br class=3D""><blockquote type=3D"cite" class=3D""><div =
+class=3D"">On Sep 26, 2020, at 4:45 PM, Pioneer Engg Services &lt;<a =
+href=3D"mailto:pioneer4us@gmail.com" =
+class=3D"">pioneer4us@gmail.com</a>&gt; wrote:</div><br =
+class=3D"Apple-interchange-newline"><div class=3D""><div dir=3D"ltr" =
+class=3D""><div class=3D"gmail_default" style=3D"font-family: verdana, =
+sans-serif; font-size: small;">Please quote the rates for the =
+following:</div><div class=3D"gmail_default" style=3D"font-family: =
+verdana, sans-serif; font-size: small;"><br class=3D""></div><div =
+class=3D"gmail_default" style=3D"font-family: verdana, sans-serif; =
+font-size: small;"><br class=3D""></div><div class=3D"gmail_default" =
+style=3D"font-family: verdana, sans-serif; font-size: small;"><br =
+class=3D""></div><div class=3D"gmail_default" style=3D"font-family: =
+verdana, sans-serif; font-size: small;"><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"423" =
+style=3D"border-collapse:collapse;width:318pt" class=3D"">
+
+ <colgroup class=3D""><col width=3D"361" style=3D"width:271pt" class=3D"">=
+
+ <col width=3D"62" style=3D"width:47pt" class=3D"">
+ </colgroup><tbody class=3D""><tr height=3D"58" style=3D"height:43.2pt" =
+class=3D"">
+  <td height=3D"58" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:43.2pt;width:271pt;font-size:11pt;font-family:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">Supply
+  &amp; Installation of Air Devices with damper (Tuttle &amp; Bailey =
+standards)
+  Complete with all respect as per specification and drawings.</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-left:none;width:47pt;font-size:11pt;font-family:Cambria,se=
+rif;text-align:center;vertical-align:middle;border-top:0.5pt solid =
+windowtext;border-right:0.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">Nos</td>
+ </tr>
+ <tr height=3D"45" style=3D"height:33.75pt" class=3D"">
+  <td height=3D"45" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:33.75pt;border-top:none;width:271pt;font-size:11pt;font-fa=
+mily:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border-right:0.5pt solid =
+windowtext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">9" dia E.A.R</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-top:none;border-left:none;width:47pt;font-size:11pt;font-f=
+amily:Cambria,serif;text-align:center;vertical-align:middle;border-right:0=
+.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">15</td>
+ </tr>
+ <tr height=3D"45" style=3D"height:33.75pt" class=3D"">
+  <td height=3D"45" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:33.75pt;border-top:none;width:271pt;font-size:11pt;font-fa=
+mily:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border-right:0.5pt solid =
+windowtext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">9" dia F.A.D</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-top:none;border-left:none;width:47pt;font-size:11pt;font-f=
+amily:Cambria,serif;text-align:center;vertical-align:middle;border-right:0=
+.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">38</td>
+ </tr>
+ <tr height=3D"45" style=3D"height:33.75pt" class=3D"">
+  <td height=3D"45" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:33.75pt;border-top:none;width:271pt;font-size:11pt;font-fa=
+mily:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border-right:0.5pt solid =
+windowtext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">12" X&nbsp; 12" S.A.D</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-top:none;border-left:none;width:47pt;font-size:11pt;font-f=
+amily:Cambria,serif;text-align:center;vertical-align:middle;border-right:0=
+.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">17</td>
+ </tr>
+ <tr height=3D"45" style=3D"height:33.75pt" class=3D"">
+  <td height=3D"45" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:33.75pt;border-top:none;width:271pt;font-size:11pt;font-fa=
+mily:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border-right:0.5pt solid =
+windowtext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">E.A.L 14" X 8"</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-top:none;border-left:none;width:47pt;font-size:11pt;font-f=
+amily:Cambria,serif;text-align:center;vertical-align:middle;border-right:0=
+.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">2</td>
+ </tr>
+ <tr height=3D"45" style=3D"height:33.75pt" class=3D"">
+  <td height=3D"45" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:33.75pt;border-top:none;width:271pt;font-size:11pt;font-fa=
+mily:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border-right:0.5pt solid =
+windowtext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">E.A.L 18" X 10"</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-top:none;border-left:none;width:47pt;font-size:11pt;font-f=
+amily:Cambria,serif;text-align:center;vertical-align:middle;border-right:0=
+.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">1</td>
+ </tr>
+ <tr height=3D"45" style=3D"height:33.75pt" class=3D"">
+  <td height=3D"45" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:33.75pt;border-top:none;width:271pt;font-size:11pt;font-fa=
+mily:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border-right:0.5pt solid =
+windowtext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">E.A.L 16" X 8"</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-top:none;border-left:none;width:47pt;font-size:11pt;font-f=
+amily:Cambria,serif;text-align:center;vertical-align:middle;border-right:0=
+.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">1</td>
+ </tr>
+ <tr height=3D"45" style=3D"height:33.75pt" class=3D"">
+  <td height=3D"45" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:33.75pt;border-top:none;width:271pt;font-size:11pt;font-fa=
+mily:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border-right:0.5pt solid =
+windowtext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">F.I.L&nbsp; 16" X 10"
+  (WITH VCD AND FLITER</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-top:none;border-left:none;width:47pt;font-size:11pt;font-f=
+amily:Cambria,serif;text-align:center;vertical-align:middle;border-right:0=
+.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">1</td>
+ </tr>
+ <tr height=3D"45" style=3D"height:33.75pt" class=3D"">
+  <td height=3D"45" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:33.75pt;border-top:none;width:271pt;font-size:11pt;font-fa=
+mily:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border-right:0.5pt solid =
+windowtext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">F.I.L&nbsp; 16" X 8"
+  (WITH VCD AND FLITER</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-top:none;border-left:none;width:47pt;font-size:11pt;font-f=
+amily:Cambria,serif;text-align:center;vertical-align:middle;border-right:0=
+.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">1</td>
+ </tr>
+ <tr height=3D"45" style=3D"height:33.75pt" class=3D"">
+  <td height=3D"45" class=3D"gmail-xl71" width=3D"361" =
+style=3D"height:33.75pt;border-top:none;width:271pt;font-size:11pt;font-fa=
+mily:&quot;Book =
+Antiqua&quot;,serif;vertical-align:top;border-right:0.5pt solid =
+windowtext;border-bottom:0.5pt solid windowtext;border-left:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">F.I.L&nbsp; 18" X 10"
+  (WITH VCD AND FLITER</td>
+  <td class=3D"gmail-xl70" width=3D"62" =
+style=3D"border-top:none;border-left:none;width:47pt;font-size:11pt;font-f=
+amily:Cambria,serif;text-align:center;vertical-align:middle;border-right:0=
+.5pt solid windowtext;border-bottom:0.5pt solid =
+windowtext;background-image:initial;background-position:initial;background=
+-size:initial;background-repeat:initial;background-origin:initial;backgrou=
+nd-clip:initial;padding-top:1px;padding-right:1px;padding-left:1px;color:w=
+indowtext">1</td>
+ </tr>
+
+</tbody></table></div><div class=3D"gmail_default" style=3D"font-family: =
+verdana, sans-serif; font-size: small;"><br class=3D""></div><div =
+class=3D""><div dir=3D"ltr" class=3D"gmail_signature" =
+data-smartmail=3D"gmail_signature"><div dir=3D"ltr" class=3D""><img =
+src=3D"https://docs.google.com/uc?export=3Ddownload&amp;id=3D14t27TmRmNs-g=
+Qetk89MoT3ZZ-T-0OuZf&amp;revid=3D0B70qWfzTpYmWRmNJRzVINFlXTU1vUk9FT2c4MUZu=
+d2MvWWpBPQ" class=3D""><br class=3D""></div><div dir=3D"ltr" =
+class=3D""><br class=3D""></div><div dir=3D"ltr" class=3D""><br =
+class=3D""></div><div dir=3D"ltr" class=3D""><br =
+class=3D""></div></div></div></div>
+
+</div></blockquote></div><br class=3D""></body></html>=
+
+--Apple-Mail=_7A37E46A-7F70-49A4-9483-1E5C517823BE--
